@@ -337,8 +337,9 @@ ErikaGroup:
 
 YoungsterGroup:
 	; YOUNGSTER (1)
-	db "JOEY@", TRAINERTYPE_NORMAL
+	db "JOEY@", TRAINERTYPE_DVS
 	db  4, RATTATA
+	              db PERFECT_DV, PERFECT_DV
 	db -1 ; end
 
 	; YOUNGSTER (2)
