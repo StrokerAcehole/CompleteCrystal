@@ -14,9 +14,27 @@ SECTION "Enemy Trainer Parties 1", ROMX
 
 FalknerGroup:
 	; FALKNER (1)
-	db "FALKNER@", TRAINERTYPE_MOVES
-	db  7, PIDGEY,     TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
-	db  9, PIDGEOTTO,  TACKLE, MUD_SLAP, GUST, NO_MOVE
+	db "FALKNER@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM | TRAINERTYPE_MOVES
+	db 13, PIDGEY
+			db $bb, $bb ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db NO_ITEM
+			db MUD_SLAP, QUICK_ATTACK, GUST, SAND_ATTACK
+	db 14, PIDGEOTTO
+			db $bb, $bb ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db NO_ITEM
+			db MUD_SLAP, QUICK_ATTACK, GUST, WHIRLWIND
+	db 14, HOOTHOOT
+			db $bb, $bb ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db FOCUS_BAND
+			db CONFUSION, GROWL, GUST, HYPNOSIS
+	db 15, FARFETCH_D 
+			db $cc, $cc ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db GOLD_BERRY
+			db MUD_SLAP, PECK, FURY_ATTACK, VINE_WHIP
 	db -1 ; end
 
 WhitneyGroup:

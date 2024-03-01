@@ -2219,7 +2219,7 @@ HoothootEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 6, FORESIGHT
-	db 11, PECK
+	db 11, GUST
 	db 16, HYPNOSIS
 	db 22, REFLECT
 	db 28, TAKE_DOWN
