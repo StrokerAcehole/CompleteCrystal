@@ -22,7 +22,7 @@ JohtoGrassWildMons:
 	db 7, BELLSPROUT
 	; nite
 	db 5, GASTLY
-	db 6, GASTLY
+	db 6, ZUBAT
 	db 7, GASTLY
 	db 5, RATTATA
 	db 8, GASTLY
