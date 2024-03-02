@@ -373,8 +373,9 @@ YoungsterGroup:
 
 	; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
-	db  2, PIDGEY
-	db  4, RATTATA
+	db  5, HOPPIP
+	db  5, RATTATA
+	db  6, PIDGEY
 	db -1 ; end
 
 	; YOUNGSTER (3)
@@ -1526,8 +1527,9 @@ SabrinaGroup:
 BugCatcherGroup:
 	; BUG_CATCHER (1)
 	db "DON@", TRAINERTYPE_NORMAL
-	db  3, CATERPIE
-	db  3, CATERPIE
+	db  6, CATERPIE
+	db  6, SENTRET
+	db  7, SPINARAK
 	db -1 ; end
 
 	; BUG_CATCHER (2)
@@ -1543,12 +1545,12 @@ BugCatcherGroup:
 	db 30, BEEDRILL
 	db -1 ; end
 
-	; BUG_CATCHER (4)
+	; BUG_CATCHER (4) 
 	db "WADE@", TRAINERTYPE_NORMAL
-	db  2, CATERPIE
-	db  2, CATERPIE
-	db  3, WEEDLE
-	db  2, CATERPIE
+	db  5, CATERPIE
+	db  5, LEDYBA
+	db  6, WEEDLE
+	db  8, METAPOD
 	db -1 ; end
 
 	; BUG_CATCHER (5)
